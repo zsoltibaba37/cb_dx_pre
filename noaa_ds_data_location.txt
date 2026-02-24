@@ -1,0 +1,3 @@
+
+https://services.swpc.noaa.gov/text/daily-solar-indices.txt
+
