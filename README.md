@@ -9,7 +9,7 @@ This little script will help you find out what the current coverage is like on t
 
 First make a link to local bin folder, and use it. 
 
-```sh
+```bash
 λ> git clone https://github.com/zsoltibaba37/cb_dx_pre.git
 λ> sudo ln -s /home/USERNAME/cb_dx_pre/cb_check.py /usr/local/bin/dxcheck  
     or whatever you want
