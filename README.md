@@ -11,9 +11,9 @@ First make a link to local bin folder, and use it.
 
 ```sh
 λ> git clone https://github.com/zsoltibaba37/cb_dx_pre.git
-λ> sudo ln -s /home/USERNAME/cb_dx_pre/cb_check.py /usr/local/bin/cbcheck  
+λ> sudo ln -s /home/USERNAME/cb_dx_pre/cb_check.py /usr/local/bin/dxcheck  
     or whatever you want
-λ> cbcheck
+λ> dxcheck
 
 :Product: Daily Solar Data            DSD.txt
 :Issued: 0225 UT 26 Feb 2026
