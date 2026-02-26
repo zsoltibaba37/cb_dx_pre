@@ -10,11 +10,11 @@ RESET  = "\033[0m"
 
 def classify(flux, ssn):
     if flux >= 150 and ssn >= 100:
-        return GREEN, "KIVÁLÓ"
+        return GREEN, "EXELLENT"
     elif flux >= 120 and ssn >= 50:
-        return YELLOW, "JÓ"
+        return YELLOW, "GOOD"
     else:
-        return RED, "GYENGE"
+        return RED, "WEAK"
 
 with urllib.request.urlopen(URL) as r:
     for line in r.read().decode().splitlines():
