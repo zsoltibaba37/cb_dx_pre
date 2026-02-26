@@ -2,7 +2,7 @@
 
 ---
 
-This little script will help you find out what the current coverage is like on the CB frequency.
+This little script will help you find out what the current proapagation on the CB frequency.
 
 ---
 ### First 
