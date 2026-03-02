@@ -2,7 +2,7 @@
 
 ---
 
-This little script will help you find out what the current proapagation on the CB frequency.
+This little script will help you find out what the spread of the CB frequency has been like in the past few days.
 
 ---
 ### First 
