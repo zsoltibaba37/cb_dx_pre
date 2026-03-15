@@ -5,10 +5,10 @@ import re
 URL = "https://services.swpc.noaa.gov/text/wwv.txt"
 
 def classify(sfi, k):
-    if k >= 4: return "\033[91mROSSZ (Vihar)\033[0m"
-    if sfi >= 150: return "\033[92mKIVÁLÓ (DX)\033[0m"
-    if sfi >= 100: return "\033[93mJÓ\033[0m"
-    return "\033[33mGYENGE\033[0m"
+    if k >= 4: return "\033[91mBAD (Vihar)\033[0m"
+    if sfi >= 150: return "\033[92mEXCELLENT (DX)\033[0m"
+    if sfi >= 100: return "\033[93mGOOD\033[0m"
+    return "\033[33mWEAK\033[0m"
 
 try:
     req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
@@ -28,11 +28,11 @@ try:
         k = float(k_str)
         a_index = a_match.group(1) if a_match else "?"
 
-        print(f"\n--- 11m / CB AKTUÁLIS ADATOK ---")
+        print(f"\n--- 11m / CB Current Data ---")
         print(f"Solar Flux (SFI): {sfi}")
         print(f"K-index:          {k}")
         print(f"A-index:          {a_index}")
-        print(f"Terjedés:         {classify(sfi, k)}")
+        print(f"Propagation:      {classify(sfi, k)}")
         print(f"---------------------------------\n")
     else:
         print("Hiba: Nem találom a számokat a szövegben.")

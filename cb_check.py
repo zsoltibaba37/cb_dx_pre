@@ -10,7 +10,7 @@ RESET  = "\033[0m"
 
 def classify(flux, ssn):
     if flux >= 150 and ssn >= 100:
-        return GREEN, "EXELLENT"
+        return GREEN, "EXCELLENT"
     elif flux >= 120 and ssn >= 50:
         return YELLOW, "GOOD"
     else:
