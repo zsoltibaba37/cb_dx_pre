@@ -20,7 +20,9 @@ This data is the past
 
 ```bash
 This data is current
-λ> python dxcheck.py
+
+λ> sudo ln -s /home/USERNAME/cb_dx_pre/dxcheck.py /usr/local/bin/dxcheck
+λ> dxcheck
 
 --- 11m / CB Current Data ---
 Solar Flux (SFI): 112
